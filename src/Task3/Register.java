@@ -1,6 +1,9 @@
 package Task3;
 
-public interface Register {
-    void saveDocumentInRegister();
-    void giveInformationAboutDocument();
+public abstract class Register {
+    Register[] registers = new Register[10];
+
+    public abstract void saveDocumentInRegister();
+
+    public abstract void giveInformationAboutDocument();
 }
